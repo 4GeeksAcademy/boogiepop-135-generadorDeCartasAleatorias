@@ -21,4 +21,10 @@ document.getElementById("simboloArriba").innerHTML = randomTipo;
 document.getElementById("numeroCentro").innerHTML = randomCardNumber;
 document.getElementById("simboloAbajo").innerHTML = randomTipo;
 
+
+if (randomTipo === "♦" || randomTipo === "♥") {
+  document.getElementById("cuerpoDeCarta").style.color = "red";
+} else {
+  document.getElementById("cuerpoDeCarta").style.color = "black";
+}
 };
